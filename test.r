@@ -125,13 +125,3 @@ lines(density(mpg[cyl==8]), col = "blue", lty = 3)
 legend("topright", paste(c(4,6,8), "Cylinder"),
        col = c("black","red", "blue"),
        lty = c(1,2,3), lwd = 3, bty ="n")
-```
-
-
-tmp = c("buckled", "unbuckled")
-belt <- matrix( c(58, 2, 8, 16), ncol = 2, 
-                dimnames = list(parent = tmp, child = tmp))
-belt
-barplot( t(belt), main = "Stacked Bar chart for child seat-belt usage",
-         xlab = "parent", ylab = "Frequency", legend.text = TRUE,
-         col = c("green", "red"))
